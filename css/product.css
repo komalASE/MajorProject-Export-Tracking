@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    border: 1px solid black;
+
+}
+
+.container{
+    border: 1px solid black;
+    margin: 40px;
+    padding: 40px;
+}
+
+.product-img{
+    border: 2px solid black;
+    width: 50%;
+    height: 250px;
+}
+
+.prod-img{
+    border: 2px solid black;
+    width: 50%;
+    height: 50px;
+}
+
+.back-btn{
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: yellow;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}

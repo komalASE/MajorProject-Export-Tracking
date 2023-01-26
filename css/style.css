@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.top-nav {
+  background-color: rgb(31, 28, 49);
+  height: 25px;
+}
+
+.logo {
+  padding-left: 50px;
+  width: 16%;
+}
+
+.main {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(226, 214, 214);
+  padding-right: 80px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+}
+
+a:hover {
+  color: white;
+  background-color: rgb(50, 71, 90);
+  border-radius: 30px;
+}
+
+.banner{
+width: 80%;
+height: 400px;
+}
+
+#img-banner{
+ width: 100%;
+ height: 100%;
+ margin-left: 137px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  height: 300px;
+}
+
+.row {
+  background-color: rgb(226, 214, 214);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer-text {
+  padding: 20px 0px 0px 65px;
+}
+
+.lowerFooter {
+  text-align: center;
+  background-color: black;
+  height: 30px;
+  padding-top: 10px;
+  color: white;
+}
+
+.fa {
+  padding: -1px;
+  font-size: 20px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 18px 8px;
+}
+
+.icon {
+  padding: 30px 0px 0px 57px;
+}
+
+.row-container {
+  display: flex;
+}
+
+.left-container {
+  padding: 3px 20px 0px 0px;
+}
+
+.right-container {
+  padding: 0px 60px 100px 80px;
+}
+
+#banner{
+  width: 50%;
+  height: 380px;
+  padding-left: 292px;
+  padding-top: 12px;
+}
+
+.footer-img:hover{
+  background-color: rgb(50, 71, 90);
+  width: 39%;
+}
+
+.next-row{
+  /* border: 2px solid black; */
+  margin: -30px 40px 40px 40px
+}
+.inner-row{
+  /* border: 2px solid black; */
+  display: flex;
+  width: 100%;
+  
+}
+.col{
+  /* border: 2px solid black; */
+  /* background-color: aqua; */
+  width: 33%;
+}
+
+.inner-col{
+  /* border: 2px solid black; */
+  width: 30%;
+  /* background-color: rebecca purple; */
+}
+
+.page-maincontainer{
+  padding-top: 50px;
+  /* background-color: #cfe9cb; */
+}
+
+.col{
+  display: flex;
+  height: 300px;
+}
+
+.card-img{
+  width: 150px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.inner1-col{
+   width: 100%;
+}
+.inner2-col{
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.inner2-row1{
+  padding-bottom: 30px;
+}
