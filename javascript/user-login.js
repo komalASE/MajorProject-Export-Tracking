@@ -58,34 +58,12 @@ function formSubmission(e) {
         else {
             console.log("Email not found, please check your email");
         }
-        // const res = emailCheck(email);
-        // alert("Form Submitted"+res);
-        // console.log("Form Submitted", res)
     }
     
-    window.location.href = "../html/product.html"
-
-    // else{
-    //     const user = {
-    //         name: e.target.name.value,
-    //         email:
-    //     }
-    //     // localStorage.setItem('name', e.target.name.value);
-    //     // localStorage.setItem('email', e.target.email.value);
-    //     // localStorage.setItem('role', e.target.role.value);
-    //     // localStorage.setItem('password', e.target.password.value);
-    //     // localStorage.setItem('loggedInUuuuuuuuuuuuuuuuuuuuuuuu')
-    //     alert('Your account has been created');
-    // }
+    window.location.href = "../html/product-add.html"
 
 }
 
-// const emailCheck = (userEmail) => {
-//     console.log("UNNDER EMAILCHECK", userEmail)
-//     return userData.some((item) => {
-//         return item.email === userEmail;
-//     })
-// }
 
 
 

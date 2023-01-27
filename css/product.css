@@ -3,35 +3,18 @@
     padding: 0;
 }
 
-.main-container{
-    border: 1px solid black;
-
-}
-
 .container{
-    border: 1px solid black;
-    margin: 40px;
-    padding: 40px;
+    margin-top: 40px;
+    /* border: 1px solid black; */
 }
 
-.product-img{
-    border: 2px solid black;
+.image-container{
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    
+}
+
+.prodImg{
     width: 50%;
-    height: 250px;
-}
-
-.prod-img{
-    border: 2px solid black;
-    width: 50%;
-    height: 50px;
-}
-
-.back-btn{
-    width: 15%;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    background-color: yellow;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
 }

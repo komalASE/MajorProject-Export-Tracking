@@ -1,60 +1,52 @@
-const input = document.getElementById('prod-img');
-console.log("input", input);
-let imageResult;
+let productData = document.getElementById("conatiner")
+productData = JSON.parse(window.localStorage.getItem("entriesOfProduct"));
 
-input.addEventListener('change', (event) => {
-    console.log("INSIDE INPUT EVENT");
-    const images = event.target.files;
-    console.log("EVENET", event);
-    console.log("EVENT TARGET", event.target);
-    console.log("TARGETED FILE", event.target.files);
 
-    const reader = new FileReader();
+let loggedInUservar = localStorage.getItem("loggedInUser");
+console.log(loggedInUservar);
 
-    reader.readAsDataURL(images[0]);
 
-    reader.addEventListener('load', () => {
-        imageResult = reader.result;
-    });
-});
+let mailid = JSON.parse(localStorage.getItem("entriesOfProduct"));
+console.log(mailid);
 
-function addProduct(e) {
-    e.preventDefault;
+// particularMailId = mailid[1].usermailId;
+// console.log(particularMailId);
 
-    let mailId = localStorage.getItem('loggedInUser');
-    // console.log("mailIdabove",mailId);
-    let prodPickup = document.getElementById('pickup').value;
-    let prodDestination = document.getElementById('destination').value
+mailid?.map((data) => {
+    console.log(data);
+    if(loggedInUservar == data.usermailId){
+         
+        document.write(`<div class="image-container">
 
-    //storing all details of product in localstorage in array of object form
-
-    let uploadData = [];
-    // agar calSttttorage me data hoga to hi ye chaleeega and uploaaaad data me datttttttttttttttta add krega
-    if (localStorage.getItem("entriesOfProduct")) {
-        uploadData = JSON.parse(localStorage.getItem("entriesOfProduct"));
-    }
-
-    // upload Data k andar 1 record hoga
-
-    let shipment = {
-        productImg: imageResult,
-        usermailId: mailId,
-        productPickup: prodPickup,
-        productDestination: prodDestination
-    };
-    console.log("shipment", shipment);
-
-    uploadData.push(shipment);
-    // Yaha pe 2nd record uploadData me push ho jaega
-    // agar localstorage me koi data nahi hogi to ye 1st record bann jaega
-    localStorage.setItem("entriesOfProduct", JSON.stringify(uploadData));
-
-    // let allentries = JSON.parse(localStorage.getItem("entriesOfProduct"));
-    // allentries.push(shipment);
-
-    // console.log("allentries",allentries)
-    // localStorage.setItem("entriesOfProduct",JSON.stringify(allentries));
-
+        <div class="prod-img" > <img class="prodImg" src=${data.productImg} /></div>
+    
+        <div>
+            <div class="pickup"> Current User : ${data.usermailId} </div>   
+            <div class="pickup"> Pickup Point : ${data.productPickup} </div>
+            <div class="destination" > Destination Address : ${data.productDestination} </div>
+        </div>               
+        
+        </div>`);
 }
+
+})
+
+
+
+
+// for (let i = 0; i < productData.length; i++) {
+
+//    document.write(`<div class="image-container">
+
+//         <div class="prod-img" > <img class="prodImg" src=${productData[i].productImg} /></div>
+    
+//         <div>   
+//             <div class="pickup" > Pickup Point : ${productData[i].productPickup} </div>
+//             <div class="destination" > Destination Address : ${productData[i].productDestination} </div>
+//         </div>               
+        
+//         </div>`);
+
+// }
 
 
