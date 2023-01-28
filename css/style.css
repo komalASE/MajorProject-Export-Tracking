@@ -51,15 +51,15 @@ a:hover {
   border-radius: 30px;
 }
 
-.banner{
-width: 80%;
-height: 400px;
+.banner {
+  width: 80%;
+  height: 400px;
 }
 
-#img-banner{
- width: 100%;
- height: 100%;
- margin-left: 137px;
+#img-banner {
+  width: 100%;
+  height: 100%;
+  margin-left: 137px;
 }
 
 .column {
@@ -113,64 +113,64 @@ height: 400px;
   padding: 0px 60px 100px 80px;
 }
 
-#banner{
+#banner {
   width: 50%;
   height: 380px;
   padding-left: 292px;
   padding-top: 12px;
 }
 
-.footer-img:hover{
+.footer-img:hover {
   background-color: rgb(50, 71, 90);
   width: 39%;
 }
 
-.next-row{
-  /* border: 2px solid black; */
+.next-row {
   margin: -30px 40px 40px 40px
 }
-.inner-row{
-  /* border: 2px solid black; */
+
+.inner-row {
   display: flex;
   width: 100%;
-  
-}
-.col{
-  /* border: 2px solid black; */
-  /* background-color: aqua; */
-  width: 33%;
+
 }
 
-.inner-col{
-  /* border: 2px solid black; */
+.col {
+  margin: 35px;
+  width: 380px;
+  border: 1px solid rgb(182, 181, 181);
+  border-radius: 8px;
+}
+
+.inner-col {
   width: 30%;
-  /* background-color: rebecca purple; */
 }
 
-.page-maincontainer{
+.page-maincontainer {
   padding-top: 50px;
-  /* background-color: #cfe9cb; */
 }
 
-.col{
+.col {
   display: flex;
   height: 300px;
 }
 
-.card-img{
-  width: 150px;
+.card-img {
+  width: 138px;
   height: 200px;
   margin-top: 40px;
   margin-left: 20px;
 }
 
-.inner1-col{
-   width: 100%;
+.inner1-col {
+  width: 100%;
 }
-.inner2-col{
+
+.inner2-col {
   padding-left: 30px;
   padding-top: 30px;
 }
-.inner2-row1{
+
+.inner2-row1 {
   padding-bottom: 30px;
 }

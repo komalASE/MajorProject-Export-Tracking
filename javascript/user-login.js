@@ -36,7 +36,7 @@ function formSubmission(e) {
     const password = e.target.password.value;
     // if (e.target.name.value === "" || e.target.name.value === null) {
     //     alert("Please enter a name");
-    // }
+    // }s
      if (e.target.email.value === "" || e.target.email.value === null) {
         alert("Please enter a valid email id");
     }
@@ -54,15 +54,17 @@ function formSubmission(e) {
                 console.log("PASSWORD MATCHED");
                 localStorage.setItem("loggedInUser", email);
             }
+            else{
+                alert("please check yoour password")
+            }
         }
         else {
             console.log("Email not found, please check your email");
         }
     }
-    
     window.location.href = "../html/product-add.html"
-
 }
+
 
 
 

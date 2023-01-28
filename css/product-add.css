@@ -1,37 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.main-container{
-    border: 1px solid black;
+.main-container {
 
 }
 
-.container{
-    border: 1px solid black;
-    margin: 40px;
-    padding: 40px;
+#pickup{
+  padding: 5px;
+  border: 2px solid black;
 }
 
-.product-img{
-    border: 2px solid black;
-    width: 50%;
-    height: 250px;
+#destination{
+  border: 2px solid black;
+  padding: 5px;
 }
 
-.prod-img{
-    border: 2px solid black;
-    width: 50%;
-    height: 50px;
+.container {
+  margin: 40px;
+  padding: 40px;
 }
 
-.back-btn{
-    width: 15%;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    background-color: yellow;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
+.product-img {
+  border: dotted;
+  background-color: #e7e4e4;
+  height: 250px;
+}
+
+.prod-img {
+  border: 2px solid black;
+  width: 50%;
+  height: 50px;
+  margin-top: 97px;
+}
+
+.top-nav {
+  background-color: rgb(31, 28, 49);
+  height: 25px;
+}
+
+.logo {
+  padding-left: 50px;
+  width: 16%;
+}
+
+.main {
+  /* position: sticky; */
+  top: 0px;
+  left: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(226, 214, 214);
+  padding-right: 80px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+}
+
+a:hover {
+  color: white;
+  background-color: rgb(211, 211, 57);
+  border-radius: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  height: 300px;
+}
+
+.row {
+  background-color: rgb(226, 214, 214);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer-text {
+  padding: 20px 0px 0px 65px;
+}
+
+.lowerFooter {
+  text-align: center;
+  background-color: black;
+  height: 30px;
+  padding-top: 10px;
+  color: white;
+}
+
+.fa {
+  padding: -1px;
+  font-size: 20px;
+  width: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 18px 8px;
+}
+
+.icon {
+  padding: 30px 0px 0px 57px;
 }

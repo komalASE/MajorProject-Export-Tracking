@@ -41,7 +41,8 @@ function addProduct(e) {
         productImg: imageResult,
         usermailId: mailId,
         productPickup: prodPickup,
-        productDestination: prodDestination
+        productDestination: prodDestination,
+        status: "Pending"
     };
     console.log("shipment", shipment);
 
@@ -59,7 +60,9 @@ function addProduct(e) {
 
     alert("successfully submitted, will let you know soon about the update")
 
-}
 
 window.location.href = "../html/product.html"
+
+}
+
 

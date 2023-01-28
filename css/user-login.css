@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 100vh;
+    height: 84.5vh;
     /* background-image: linear-gradient(rgb(187 184 111 / 80%), rgb(23 23 183 / 80%)), url(../Image/login-background.jpeg); */
     background-position: center;
     background-color: #cbc4d8;
@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.form-box{
+.form-box {
     width: 90%;
     max-width: 450px;
     position: absolute;
@@ -27,14 +27,14 @@
     text-align: center;
 }
 
-.form-box h1{
+.form-box h1 {
     font-size: 30px;
     margin-bottom: 60px;
     color: #3c00a0;
     position: relative;
 }
 
-.form-box h1::after{
+.form-box h1::after {
     content: ' ';
     width: 30px;
     height: 4px;
@@ -46,7 +46,7 @@
     transform: translate(-50%);
 }
 
-.input-field{
+.input-field {
     background: #eaeaea;
     margin: 15px 0;
     border-radius: 3px;
@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-input{
+input {
     width: 100%;
     background: transparent;
     border: 0;
@@ -62,28 +62,28 @@ input{
     padding: 18px 15px;
 }
 
-.input-field i{
+.input-field i {
     margin-left: 15px;
     color: #999;
 }
 
-form p{
+form p {
     text-align: left;
     font-size: 13px;
 }
 
-form p a{
+form p a {
     text-decoration: none;
     color: #3c00a0;
 }
 
-.btn-field{
+.btn-field {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.btn-field button{
+.btn-field button {
     flex-basis: 48%;
     background: #3c00a0;
     color: #fff;
@@ -95,11 +95,65 @@ form p a{
     transition: background 1s;
 }
 
-.input-group{
+.input-group {
     height: 180px;
 }
 
-.btn-field button.disable{
+.btn-field button.disable {
     background: #eaeaea;
     color: #555;
 }
+
+.top-nav {
+    background-color: rgb(31, 28, 49);
+    height: 25px;
+}
+
+.logo {
+    padding-left: 50px;
+    width: 16%;
+}
+
+.main {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(226, 214, 214);
+    padding-right: 80px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(50, 71, 90);
+    border-radius: 30px;
+}
+
+.lowerFooter {
+    text-align: center;
+    background-color: black;
+    height: 30px;
+    padding-top: 10px;
+    color: white;
+  }
