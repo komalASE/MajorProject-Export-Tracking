@@ -5,7 +5,7 @@ let imageResult;
 input.addEventListener('change', (event) => {
     console.log("INSIDE INPUT EVENT");
     const images = event.target.files;
-    
+
     console.log("EVENET", event);
     console.log("EVENT TARGET", event.target);
     console.log("TARGETED FILE", event.target.files);
@@ -38,6 +38,7 @@ function addProduct(e) {
     // upload Data k andar 1 record hoga
 
     let shipment = {
+        id: uploadData.length > 0 ? uploadData.length : 0,
         productImg: imageResult,
         usermailId: mailId,
         productPickup: prodPickup,
@@ -46,22 +47,15 @@ function addProduct(e) {
     };
     console.log("shipment", shipment);
 
-    
+
     uploadData.push(shipment);
-    // Yaha pe 2nd record uploadData me push ho jaega
-    // agar localstorage me koi data nahi hogi to ye 1st record bann jaega
+
     localStorage.setItem("entriesOfProduct", JSON.stringify(uploadData));
-
-    // let allentries = JSON.parse(localStorage.getItem("entriesOfProduct"));
-    // allentries.push(shipment);
-
-    // console.log("allentries",allentries)
-    // localStorage.setItem("entriesOfProduct",JSON.stringify(allentries));
 
     alert("successfully submitted, will let you know soon about the update")
 
 
-window.location.href = "../html/product.html"
+    window.location.href = "../html/product.html"
 
 }
 

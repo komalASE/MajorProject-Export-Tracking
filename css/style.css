@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   font-family: 'poppins', sans-serif;
-  /* box-sizing: border-box; */
 }
 
 .top-nav {
@@ -22,6 +21,8 @@
 }
 
 .navbar {
+  /* font-size: small; */
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   background-color: rgb(226, 214, 214);
@@ -47,8 +48,10 @@ a {
 
 a:hover {
   color: white;
-  background-color: rgb(50, 71, 90);
-  border-radius: 30px;
+  /* background-color: rgb(50, 71, 90);
+  border-radius: 30px; */
+  background-color: #8b86a7;
+  border-radius: 8px;
 }
 
 .banner {
@@ -70,6 +73,7 @@ a:hover {
 }
 
 .row {
+  height: 308px;
   background-color: rgb(226, 214, 214);
   display: flex;
   flex-direction: row;
@@ -77,6 +81,7 @@ a:hover {
 }
 
 .footer-text {
+  font-size: small;
   padding: 20px 0px 0px 65px;
 }
 
@@ -173,4 +178,10 @@ a:hover {
 
 .inner2-row1 {
   padding-bottom: 30px;
+}
+
+.inner2-row2 {
+  padding-right: 33px;
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
 }

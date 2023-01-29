@@ -21,8 +21,12 @@
 }
 
 .top-nav {
+  color: white;
+  text-align: center;
+  padding: 3px;
   background-color: rgb(31, 28, 49);
   height: 25px;
+  font-size: small;
 }
 
 .logo {
@@ -35,7 +39,7 @@
   left: 0px;
 }
 
-.navbar {
+.navbarr {
   display: flex;
   justify-content: space-between;
   background-color: rgb(226, 214, 214);
@@ -55,16 +59,53 @@ li {
 
 a {
   text-decoration: none;
-  color: #09072a;
-  padding: 5px 15px;
+  padding: 5px 5px 0px 15px;
 }
 
 a:hover {
   color: white;
-  background-color: rgb(50, 71, 90);
-  border-radius: 30px;
+  background-color: rgb(88, 99, 109);
+  border-radius: 10px;
 }
 
 .card-title{
     color: yellow;
+}
+
+.moreProduct{
+  text-align: center;
+  padding-top: 20px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.moreProdTxt{
+  color: rgb(47, 47, 97);
+}
+
+.moreProdTxt:hover{
+  color: blue;
+  text-decoration: none;
+  background-color: white;
+}
+
+.home{
+  font-weight: 700;
+  padding: 8px 0px 0px 0px ;
+  text-decoration: none;
+  color:  rgb(47, 47, 97);
+}
+.home:hover{
+  background-color:  rgb(226, 214, 214);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card{
+  display:inline-block;
+}
+
+.row{
+  display: flex;
 }

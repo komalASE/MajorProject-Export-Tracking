@@ -4,7 +4,7 @@ const userData = [
         name: 'Ashish',
         email: 'ashish@gmail.com',
         role: 'user',
-        password: 'Abc@123'
+        password: 'Abcd@123'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const userData = [
         id: 3,
         name: 'komal',
         email: 'komal@gmail.com',
-        role: 'user',
+        role: 'admin',
         password: 'Abc@123'
     },
     {
@@ -37,7 +37,7 @@ function formSubmission(e) {
     // if (e.target.name.value === "" || e.target.name.value === null) {
     //     alert("Please enter a name");
     // }s
-     if (e.target.email.value === "" || e.target.email.value === null) {
+    if (e.target.email.value === "" || e.target.email.value === null) {
         alert("Please enter a valid email id");
     }
     // else if (e.target.role.value === "" || e.target.role.value === null) {
@@ -48,21 +48,52 @@ function formSubmission(e) {
     }
 
     else {
-        if (userData.some((ele) => ele.email === email)) {
-            // alert("user found")
-            if (userData.some((ele) => ele.password === password)) {
-                console.log("PASSWORD MATCHED");
-                localStorage.setItem("loggedInUser", email);
+        for (let i = 0; i < userData.length; i++) {
+            if (userData[i].email === email) {
+                if(userData[i].password === password) {
+                    localStorage.setItem("loggedInUser", email);
+                    if(userData[i].role === "admin"){
+                        // localStorage.setItem("loggedInUser", email);
+                        console.log(userData[i].role);
+                        window.location.href = "../html/admin.html"
+                    }
+                    else{
+                        window.location.href = "../html/product.html"
+                    }
+                }
+                else {
+                    alert("please check yoour password")
+                }
+                break;
             }
-            else{
-                alert("please check yoour password")
+            if (i === userData.length - 1) {
+                console.log("User not found");
             }
         }
-        else {
-            console.log("Email not found, please check your email");
-        }
+
+        // if (userData.some((ele) => ele.email === email)) {
+        //     // alert("user found")
+        //     if (userData.some((ele) => ele.password === password)) {
+        //         console.log("PASSWORD MATCHED");
+        //         // window.location.href = "../html/product.html"
+        //         localStorage.setItem("loggedInUser", email);
+        //         if(userData.some((ele) => ele.role === "admin")){
+        //             window.location.href = "../html/admin.html"
+        //         }
+        //         else{
+        //             window.location.href = "../html/product.html"
+        //         }
+        //     }
+        //     else{
+        //         alert("please check yoour password")
+        //     }
+
+        // }
+        // else {
+        //     console.log("Email not found, please check your email");
+        // }
     }
-    window.location.href = "../html/product-add.html"
+
 }
 
 

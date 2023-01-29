@@ -14,7 +14,7 @@
      <!--------------HEADER--------------------------------------------->
      <div class="main">
         <div class="top-nav">
-            <p style="color: white; text-align: center; padding-top: 5px;"> PLEASE NOTE! We have maintenance planned
+            <p style="color: white; text-align: center; padding-top: 5px; font-size: small;"> PLEASE NOTE! We have maintenance planned
                 this weekend and there will be some interruptions.Thank you.</p>
         </div>
 
@@ -22,14 +22,8 @@
             <img class="logo" src="../Image/logo.png">
             <ul>
                 <li><a href="../html/index.html">Home</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Services</a></li>
                 <li><a href="../html/product-add.html">Product Add</a></li>
-                <li><a style="border: 2px solid grey;
-                    background-color: rgb(211, 211, 57);
-                    width: 90px;
-                    text-align: center;
-                    border-radius: 5px;" href="user-login.html">Login</a></li>
+                <li><a href="user-login.html">Login</a></li>
             </ul>
         </div>
     </div>
@@ -38,7 +32,7 @@
     <div class="main-container">
         <div class="container">
             <div class="product-img">
-                <label for="photos">Upload you product picture HERE!!</label>
+                <label for="photos" class="im">Upload HERE! &nbsp;</label>
                 <input class='file' id="prod-img" type='file' multiple accept="image/jpeg , image/png , image/jpg" />
             </div>
 
@@ -57,7 +51,7 @@
             </div>
             <br>
             <br>
-            <input type="submit" style="background-color: green; width:280px; padding: 5px;" value="submit" onclick="addProduct(event)">
+            <input type="submit" class="button" value="submit" onclick="addProduct(event)">
         </div>
     </div>
 
