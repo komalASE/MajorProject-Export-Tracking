@@ -29,7 +29,6 @@ mailid?.map((data) => {
 
         // </div>`);
         document.write(`
-        <div class="row">
         <div class="col-4">
             <div class="card" style="width:400px">
                 <div class="card-body">
@@ -39,7 +38,6 @@ mailid?.map((data) => {
                 <p class="card-text">Destination Address : ${data.productDestination}</p>
                 </div>
             </div>
-        </div>
         </div>
         <br>
         <br>`

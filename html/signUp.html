@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/user-login.css">
+    <link rel="stylesheet" href="../css/signUp.css">
     <script src="https://kit.fontawesome.com/09bc23e127.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -30,7 +30,7 @@
                 <li><a style="
                 width: 90px;
                 text-align: center;
-                border-radius: 5px;" href="../html/signUp.html">Sign Up</a></li>
+                border-radius: 5px;" href="../html/index.html">Home</a></li>
             </ul>
         </div>
     </div>
@@ -38,20 +38,28 @@
 
     <div class="container">
         <div class="form-box">
-            <h1>Log In</h1>
+            <h1>Sign Up</h1>
             <form method="post" onsubmit="formSubmission(event)">
-                <!-- <form method="post" onsubmit="result"> -->
                 <div class="input-group">
 
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input id="userName" type="text" name="name" placeholder="Name">
+                    </div>
 
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" name="email" placeholder="Email">
+                        <input id="userEmail" type="email" name="email" placeholder="Email">
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-users"></i>
+                        <input id="userRole" type="name" name="role" placeholder="User / Admin">
                     </div>
 
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="password" autocomplete="on" placeholder="**********">
+                        <input id="userPassword" type="password" name="password" autocomplete="on" placeholder="**********">
                     </div>
 
                     <p>Lost password <a href="#">Click Here !!</a> </p>
@@ -59,8 +67,7 @@
                 </div>
 
                 <div class="btn-field" name="button">
-                    <button type="submit"> Login </button>
-                    <!-- <button class="disable" type="button" name="button"> Sign Up</button> -->
+                    <button  type="submit"> Submit </button>
                 </div>
 
             </form>
@@ -73,7 +80,7 @@
     </div>
     <!-------------------------------LOWER-FOOTER-END-------------------------------------->
 
-    <script src="../javascript/user-login.js"></script>
+    <script src="../javascript/signUp.js"></script>
 
 </body>
 

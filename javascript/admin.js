@@ -8,9 +8,6 @@ console.log(loggedInUservar);
 let mailid = JSON.parse(localStorage.getItem("entriesOfProduct"));
 console.log("line->10", mailid);
 
-const handleReject =() => {
-    console.log("Handle reject called");
-}
 
 mailid?.map((data) => {
     console.log("line-->12", data.status);
@@ -24,10 +21,10 @@ mailid?.map((data) => {
                     <img class="card-img-top" src=${data.productImg}  alt="Card image" style="width:100%">
                     <p class="card-text">Pickup Point : ${data.productPickup}</p>
                     <p class="card-text">Destination Address : ${data.productDestination}</p>
-                    <form method="POST">
-                    <button class="btn btn-danger" onclick="handleReject()">Reject</button>
-                    <button class="btn btn-success">Approve</button>
-                    </form> 
+                   
+                    <button id="approveBtn" onclick="approveRequest(${data.id})">Approve</button>
+                    <button id="rejectBtn" onclick="rejectRequest(${data.id})">Reject</button>
+                  
                     </div>
                 </div>
             </div>
@@ -37,3 +34,34 @@ mailid?.map((data) => {
         );
     }
 })
+
+function approveRequest(id) {
+    console.log("approved", id);
+    const entries = JSON.parse(localStorage.getItem('entriesOfProduct'));
+
+    entries?.map((data) => {
+        console.log("line->43", data.id);
+        if (data.id === id) { 
+          data.status = "approved";
+          alert("status updated successfully")
+        }
+    
+    })
+
+    localStorage.setItem("entriesOfProduct", JSON.stringify(entries));
+
+}
+
+function rejectRequest(id) {
+    console.log("rejected",id);
+    const entries = JSON.parse(localStorage.getItem('entriesOfProduct'));
+
+    entries?.map((data) => {
+        if (data.id === id) { 
+          data.status = "rejected";
+          alert("status updated successfully")
+        }
+    
+    })
+    localStorage.setItem("entriesOfProduct",JSON.stringify(entries));
+}
