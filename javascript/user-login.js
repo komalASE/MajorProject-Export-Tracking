@@ -62,13 +62,13 @@ function formSubmission(e) {
                     }
                 }
                 else {
-                    alert("please check yoour password")
+                    alert("please check your password")
                 }
                 break;
             }
             if (i === userData.length - 1) {
-                console.log("User not found");
-                alert("please sign up first")
+                // console.log("User not found");
+                alert("User not found");
             }
         }
 

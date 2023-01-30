@@ -3,12 +3,73 @@
     margin: 0;
 }
 #approveBtn {
-    background-color: green;
+    background-color: #57c757;
     padding: 2px;
 }
 
 #rejectBtn {
-    background-color: red;
+    background-color: #e94040;
     padding: 2px;
     width: 73px;
 }
+
+
+.top-nav {
+    background-color: rgb(31, 28, 49);
+    height: 25px;
+}
+
+.logo {
+    padding-left: 50px;
+    width: 16%;
+}
+
+.main {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(226, 214, 214);
+    padding-right: 80px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(152, 171, 187);
+    border-radius: 30px;
+}
+
+.lowerFooter {
+    text-align: center;
+    background-color: black;
+    height: 30px;
+    padding-top: 10px;
+    color: white;
+  }
+
+p{
+    font-size: small;
+}
+

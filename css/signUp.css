@@ -77,7 +77,7 @@ form p a {
 }
 
 .btn-field {
-    width: 100%;
+    width: 700px;
     display: flex;
     justify-content: space-between;
 }

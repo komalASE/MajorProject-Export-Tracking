@@ -5,11 +5,11 @@ console.log("line->3", productData);
 let loggedInUservar = localStorage.getItem("loggedInUser");
 console.log(loggedInUservar);
 
-let mailid = JSON.parse(localStorage.getItem("entriesOfProduct"));
-console.log("line->10", mailid);
+let allEntriesOfTheProduct = JSON.parse(localStorage.getItem("entriesOfProduct"));
+console.log("line->10", allEntriesOfTheProduct);
 
 
-mailid?.map((data) => {
+allEntriesOfTheProduct?.map((data) => {
     console.log("line-->12", data.status);
     if (data.status === "Pending") {
         console.log("line-->14", data.status);
@@ -42,7 +42,7 @@ function approveRequest(id) {
     entries?.map((data) => {
         console.log("line->43", data.id);
         if (data.id === id) { 
-          data.status = "approved";
+          data.status = "Approved";
           alert("status updated successfully")
         }
     
@@ -58,7 +58,7 @@ function rejectRequest(id) {
 
     entries?.map((data) => {
         if (data.id === id) { 
-          data.status = "rejected";
+          data.status = "Rejected";
           alert("status updated successfully")
         }
     
