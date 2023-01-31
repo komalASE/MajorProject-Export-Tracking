@@ -28,7 +28,7 @@ function formSubmission(e) {
     let userData = JSON.parse(localStorage.getItem('userdata'));
 
     if(userData.some((ele) => ele.email === useremail)){
-      alert("EMAIL ALREADY EXIST")
+      alert("Email Already Exist")
     }
     else{
       userData.push(userdata);

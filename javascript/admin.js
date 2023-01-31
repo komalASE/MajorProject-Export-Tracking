@@ -14,8 +14,7 @@ allEntriesOfTheProduct?.map((data) => {
     if (data.status === "Pending") {
         console.log("line-->14", data.status);
         document.write(`
-            <div  class="row">
-            <div class="col-4">
+           
                 <div class="card" style="width:400px">
                     <div class="card-body">
                     <img class="card-img-top" src=${data.productImg}  alt="Card image" style="width:100%">
@@ -27,8 +26,7 @@ allEntriesOfTheProduct?.map((data) => {
                   
                     </div>
                 </div>
-            </div>
-            </div>
+            
             <br>
             <br>`
         );

@@ -8,6 +8,7 @@
 }
 
 #pickup {
+  cursor: pointer;
   font-size: medium;
   font-weight: 100;
   width: 47%;
@@ -19,9 +20,12 @@
 }
 
 #destination {
-  /* margin-left: 350px; */
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 100;
   width: 47%;
   border: 2px solid #ddd2d2;
+  margin: 15px 0;
   background: #eaeaea;
   padding: 5px;
 }
@@ -39,6 +43,7 @@
 }
 
 .product-img {
+  cursor: pointer;
   display: flex;
   align-items: center;
   width: 60%;
@@ -48,6 +53,7 @@
 }
 
 #prod-img {
+  cursor: pointer;
   align-items: center;
 }
 

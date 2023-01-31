@@ -4,6 +4,9 @@
   font-family: 'poppins', sans-serif;
 }
 
+body{
+  margin: 0 auto;
+}
 .container {
   margin-top: 40px;
 }
@@ -106,7 +109,7 @@ a:hover {
 }
 
 .card {
-  
+  margin: 20px;
   width: 400px;
   display: inline-block !important;
 }
@@ -117,11 +120,13 @@ a:hover {
 }
 
 .card-img-top {
+  height: 300px;
   width: 100%;
   cursor: pointer;
 }
 
 .card-body{
+  height: 507.5px;
   background-color: #e6e6ed;
 }
 
